@@ -1,9 +1,12 @@
 {
   "editor.formatOnSave": true,
-  "vetur.format.options.tabSize": 2,
   "prettier.endOfLine": "lf",
+  "prettier.eslintIntegration": true,
   "files.insertFinalNewline": true,
+  "vetur.format.options.tabSize": 2,
   "vetur.completion.autoImport": true,
   "vetur.format.defaultFormatter.css": "prettier",
-  "vetur.format.defaultFormatter.html": "prettyhtml"
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "vetur.format.defaultFormatter.scss": "prettier"
 }
