@@ -1,6 +1,6 @@
 # playground-nuxt
 
-> Crouch&#39;s frontend playground
+> Crouch's frontend playground
 
 ## Build Setup
 
