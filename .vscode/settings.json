@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "vetur.format.options.tabSize": 2,
+  "prettier.endOfLine": "lf",
+  "files.insertFinalNewline": true,
+  "vetur.completion.autoImport": true,
+  "vetur.format.defaultFormatter.css": "prettier",
+  "vetur.format.defaultFormatter.html": "prettyhtml"
+}
