@@ -27,6 +27,7 @@ module.exports = {
     semi: ['error','never'],
     quotes: ['error', 'single'],
     'func-names': 'off',
+    'no-shadow': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   },
