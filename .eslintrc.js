@@ -2,22 +2,33 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
+    'jest/globals': true,
   },
   parserOptions: {
-    parser: "babel-eslint"
+    parser: 'babel-eslint',
+    ecmaVersion: 2018,
+    sourceType: 'module',
   },
-  extends: ["plugin:vue/recommended", "plugin:prettier/recommended"],
-  plugins: ["vue", "prettier"],
+  extends: [
+    'eslint:recommended',
+    'airbnb-base',
+    'plugin:vue/recommended'
+  ],
+  plugins: ['vue', 'jest'],
+  settings: {
+    'import/resolver': {
+      alias: [['@', __dirname]],
+    },
+    'import/core-modules': ['vue'],
+    'import/extensions': ['.js', '.ts', '.jsx'],
+  },
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
-    "vue/component-name-in-template-casing": "off",
-    "vue/html-indent": "off",
-    "vue/html-self-closing": "off",
-    "vue/max-attributes-per-line": "off",
-    "vue/multiline-html-element-content-newline": "off",
-    "vue/singleline-html-element-content-newline": "off",
-    "vue/v-bind-style": "off"
-  }
-};
+    semi: ['error','never'],
+    quotes: ['error', 'single'],
+    'func-names': 'off',
+    'no-shadow': 'off',
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+  },
+}
