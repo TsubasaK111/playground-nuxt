@@ -19,7 +19,7 @@
     "@nuxtjs/pwa": "^2.6.0",
     "@storybook/vue": "^5.0.2",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
+    "nuxt": "^2.5.1",
     "nuxt-buefy": "^0.3.2"
   },
   "devDependencies": {
